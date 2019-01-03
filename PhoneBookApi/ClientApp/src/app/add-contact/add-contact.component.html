@@ -1,0 +1,39 @@
+<mat-card>
+  <mat-card-header><mat-card-title>New Contact</mat-card-title></mat-card-header>
+  <form [formGroup]="newContact" class="form-container">
+
+    <mat-form-field>
+      <input type="text" matInput placeholder="Name" formControlName="name">
+      <mat-error *ngIf="formControlName.hasError('required')">
+        Name is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Type" formControlName="type">
+        <mat-option [value]="1">
+          Work
+        </mat-option>
+        <mat-option [value]="2">
+          Cellphone
+        </mat-option>
+        <mat-option [value]="3">
+          Home
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="formControlName.hasError('required')">
+        Type is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input type="tel" matInput placeholder="Number" formControlName="number">
+      <mat-error *ngIf="formControlName.hasError('required')">
+        Number is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button class="submitForm" (click)="addContact()">Save</button>
+  </form>
+</mat-card>
+<button mat-raised-button (click)="goBack()" class="backButton" title="Go Back"><i class="material-icons">chevron_left</i>Back</button>

@@ -1,0 +1,46 @@
+mat-card {
+  display: flex;
+}
+mat-card-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+mat-card-actions {
+  margin-left: auto;
+}
+mat-card-subtitle {
+  margin-bottom: 0;
+}
+mat-card:not(:last-child) {
+  margin-bottom: 15px;
+}
+mat-card-actions {
+  padding-top: 0;
+}
+.firstLetter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+}
+mat-card:nth-child(1n) .firstLetter {
+  background: #2e6da4;
+}
+mat-card:nth-child(2n) .firstLetter {
+  background: #4cae4c;
+}
+mat-card:nth-child(3n) .firstLetter {
+  background: #46b8da;
+}
+mat-card:nth-child(4n) .firstLetter {
+  background: #eea236;
+}
+mat-card:nth-child(5n) .firstLetter {
+  background: #d43f3a;
+}
+.delete i {
+  cursor: pointer;
+  color: #d43f3a;
+}

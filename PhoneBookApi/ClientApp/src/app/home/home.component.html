@@ -1,0 +1,18 @@
+<mat-card *ngFor="let phone of phonebook">
+
+  <mat-card-header>
+    <div mat-card-avatar class="firstLetter">{{phone.name | slice:0:1 | uppercase}}</div>
+    <mat-card-title>{{phone.name | titlecase}}</mat-card-title>
+    <mat-card-subtitle>{{phone.number}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-actions>
+    <a title="Edit Contact" routerLink="/contact/{{phone.id}}">
+      <i class="material-icons">edit</i>
+    </a>
+    <a class="delete" title="Delete Contact" (click)="delete(phone, phone.id)">
+      <i class="material-icons">close</i>
+    </a>
+  </mat-card-actions>
+
+</mat-card>

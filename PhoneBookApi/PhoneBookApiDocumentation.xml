@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PhoneBookApi</name>
+    </assembly>
+    <members>
+        <member name="M:PhoneBookApi.Controllers.PhoneBookController.GetPhoneBookItems">
+            <summary>
+            Retrieve all items from PhoneBook.
+            </summary>
+            <returns>PhoneBook items List</returns>
+        </member>
+        <member name="M:PhoneBookApi.Controllers.PhoneBookController.GetPhoneBookItem(System.Int64)">
+            <summary>
+            Returns a PhoneBook item matching the given id.
+            </summary>
+            <param name="id">Id of item to be retrieved</param>
+            <returns>PhoneBook item</returns>
+        </member>
+        <member name="M:PhoneBookApi.Controllers.PhoneBookController.PostPhoneBookItem(PhoneBookApi.Models.PhoneBookItem)">
+            <summary>
+            Insert a PhoneBook item.
+            </summary>
+            <returns>Inserts new PhoneBook item in data.xml and saves the file</returns>
+        </member>
+        <member name="M:PhoneBookApi.Controllers.PhoneBookController.PostPhoneBookItem(System.Int64,PhoneBookApi.Models.PhoneBookItem)">
+            <summary>
+            Updates a PhoneBook item matching the given id.
+            </summary>
+            <param name="id">Id of item to be retrieved</param>
+            <param name="PhoneBookItem">Retrieved PhoneBook item</param>
+            <returns>Updates PhoneBook item in data.xml and saves the file</returns>
+        </member>
+        <member name="M:PhoneBookApi.Controllers.PhoneBookController.DeletePhoneBookItem(System.Int64)">
+            <summary>
+            Delete a PhoneBook item matching the given id.
+            </summary>
+            <param name="id">Id of item to be retrieved</param>
+            <returns>Deletes item from data.xml and saves the file</returns>
+        </member>
+    </members>
+</doc>

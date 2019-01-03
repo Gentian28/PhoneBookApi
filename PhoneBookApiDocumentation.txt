@@ -1,0 +1,40 @@
+PhoneBookApi
+
+Framework: ASP.NET Core 2.2
+User Interface: Angular 6
+Node.js version: 10.15
+
+DataStore: XML file
+DataStore XML File: data.xml
+LINQ to XML to query the data.xml DataStore File
+
+Xml Documentation with Swagger
+Swagger Url: localhost/[port]/swagger
+XML Documentation File: PhoneBookApiDocumentation.xml
+
+Unit Tests: NUnit
+
+API:
+Get All PhoneBook Items: Get
+localhost/[port]/api/phonebook
+
+Get PhoneBook Item: Get
+localhost/[port]/api/phonebook/{id}
+
+Post PhoneBook Item: Post
+localhost/[port]/api/phonebook
+Object of Type PhoneBook
+
+Put PhoneBook Item: Put
+localhost/[port]/api/phonebook{id}
+Object of Type PhoneBook
+
+Delete PhoneBook Item: Delete
+localhost/[port]/api/phonebook{id}
+
+GitHub Link: https://github.com/Gentian28/PhoneBookApi
+
+Developed with Visual Studio Community 2017 15.9.4
+
+Gentian Shkembi
+

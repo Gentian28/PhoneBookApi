@@ -1,0 +1,19 @@
+<header>
+  <nav class='navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3'>
+    <div class="container">
+      <a class="navbar-brand" [routerLink]='["/"]'>PhoneBookApi</a>
+      <div>
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link" [routerLink]='["/"]'>Contacts</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link d-flex" [routerLink]='["/new-contact"]'>Add Contact
+              <span class="addIcon"><i class="material-icons">add_circle_outline</i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
